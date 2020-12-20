@@ -20,18 +20,18 @@ public class PrintingSystem {
         ThreadGroup students = new ThreadGroup("students");
         ThreadGroup technicians = new ThreadGroup("technicians");
 
-        Student student1 = new Student("Student 1", laserPrinter, students);
+        Student student1 = new Student("JoeBloggs", laserPrinter, students);
         student1.start();
-        Student student2 = new Student("Student 2", laserPrinter, students);
+        Student student2 = new Student("Koothrappali", laserPrinter, students);
         student2.start();
-        Student student3 = new Student("Student 3", laserPrinter, students);
+        Student student3 = new Student("Sheldon", laserPrinter, students);
         student3.start();
-        Student student4 = new Student("Student 4", laserPrinter, students);
+        Student student4 = new Student("Leonard", laserPrinter, students);
         student4.start();
 
-        PaperTechnician paperTechnician = new PaperTechnician("Paper Man", laserPrinter, technicians);
+        PaperTechnician paperTechnician = new PaperTechnician("Paper Technician", laserPrinter, technicians);
         paperTechnician.start();
-        TonerTechnician tonerTechnician = new TonerTechnician("Toner Man", laserPrinter, technicians);
+        TonerTechnician tonerTechnician = new TonerTechnician("Toner Technician", laserPrinter, technicians);
         tonerTechnician.start();
 
         // Wait till all the student threads have completed running

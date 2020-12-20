@@ -84,7 +84,7 @@ public class LaserPrinter implements ServicePrinter {
             paperLevel = paperLevel - document.getNumberOfPages();
             tonerLevel = tonerLevel - (document.getNumberOfPages());
             documentsPrinted++;
-            System.out.println(document.getDocumentName() + " by " + document.getUserID() + " printed successfully");
+            System.out.println(document.getDocumentName() + " of " + document.getUserID() + " printed successfully");
             System.out.println(document.toString());
             System.out.println(toString() + "\n");
             ThreadSleeper.sleep(2000);

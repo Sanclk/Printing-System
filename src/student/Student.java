@@ -26,11 +26,11 @@ public class Student extends Thread {
         super(threadGroup, name);
         this.name = name;
         this.laserPrinter = laserPrinter;
-        document1 = new Document(name, "Document 1", generateRandomNoOfPages());
-        document2 = new Document(name, "Document 2", generateRandomNoOfPages());
-        document3 = new Document(name, "Document 3", generateRandomNoOfPages());
-        document4 = new Document(name, "Document 4", generateRandomNoOfPages());
-        document5 = new Document(name, "Document 5", generateRandomNoOfPages());
+        document1 = new Document(name, "cwk1", generateRandomNoOfPages());
+        document2 = new Document(name, "cwk2", generateRandomNoOfPages());
+        document3 = new Document(name, "assignment5", generateRandomNoOfPages());
+        document4 = new Document(name, "physics paper1", generateRandomNoOfPages());
+        document5 = new Document(name, "research paper1", generateRandomNoOfPages());
     }
 
     /**
